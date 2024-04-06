@@ -1,7 +1,7 @@
 import {
   LocationCardContainer,
   Heading,
-  HeadingDescriptionConatiner,
+  HeadingDescriptionContainer,
   Paragraph,
 } from './styledComponents'
 import './index.css'
@@ -14,10 +14,10 @@ const LocationContainer = props => {
     <li className="list-container">
       <LocationCardContainer>
         <img src={imageUrl} alt={name} className="image" />
-        <HeadingDescriptionConatiner>
+        <HeadingDescriptionContainer>
           <Heading>{name}</Heading>
           <Paragraph>{description}</Paragraph>
-        </HeadingDescriptionConatiner>
+        </HeadingDescriptionContainer>
       </LocationCardContainer>
     </li>
   )
