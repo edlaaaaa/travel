@@ -1,4 +1,4 @@
-import {Components} from 'react'
+import {Component} from 'react'
 import './index.css'
 import Loader from 'react-loader-spinner'
 
@@ -7,7 +7,7 @@ import LocationContainer from '../LocationContainer'
 class Home extends Components {
   state = {
     locationList: [],
-    isLoading: false,
+    isLoading: true,
   }
   componentDidMount() {
     this.apiUrlPackages()
@@ -17,7 +17,7 @@ class Home extends Components {
     this.setState({
       isLoading: true,
     })
-    const apiUrl = 'https://apis.ccbp.in/tq/packages'
+    const apiUrl = 'https://apis.ccbp.in/tg/packages'
     const options = {
       method: 'GET',
     }

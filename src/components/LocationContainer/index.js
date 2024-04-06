@@ -7,7 +7,7 @@ import {
 import './index.css'
 
 const LocationContainer = props => {
-  const {LocationData} = props
+  const {locationData} = props
   const {imageUrl, description, name} = locationData
 
   return (
